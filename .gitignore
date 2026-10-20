@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+._*
+# Local reverse-engineering dumps — contain the WiFi password in cleartext
+dump/

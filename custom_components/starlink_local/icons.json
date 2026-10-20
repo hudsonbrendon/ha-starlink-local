@@ -1,0 +1,115 @@
+{
+  "entity": {
+    "sensor": {
+      "azimuth": {
+        "default": "mdi:compass"
+      },
+      "elevation": {
+        "default": "mdi:angle-acute"
+      },
+      "desired_azimuth": {
+        "default": "mdi:compass-outline"
+      },
+      "desired_elevation": {
+        "default": "mdi:angle-acute"
+      },
+      "tilt_angle": {
+        "default": "mdi:angle-acute"
+      },
+      "attitude_uncertainty": {
+        "default": "mdi:sync-alert"
+      },
+      "obstruction": {
+        "default": "mdi:weather-cloudy-alert"
+      },
+      "signal_quality": {
+        "default": "mdi:signal"
+      },
+      "gps_sats": {
+        "default": "mdi:satellite-variant"
+      },
+      "downlink": {
+        "default": "mdi:download-network"
+      },
+      "uplink": {
+        "default": "mdi:upload-network"
+      },
+      "pop_ping": {
+        "default": "mdi:timer-outline"
+      },
+      "wan_ping": {
+        "default": "mdi:timer-outline"
+      },
+      "dish_ping": {
+        "default": "mdi:timer-outline"
+      },
+      "uptime": {
+        "default": "mdi:timer-sand"
+      },
+      "mobility_class": {
+        "default": "mdi:transit-connection-variant"
+      },
+      "class_of_service": {
+        "default": "mdi:star-circle"
+      },
+      "disablement_code": {
+        "default": "mdi:alert-circle-outline"
+      },
+      "dish_disablement_code": {
+        "default": "mdi:alert-circle-outline"
+      },
+      "software_update_state": {
+        "default": "mdi:package-up"
+      },
+      "hardware_self_test": {
+        "default": "mdi:test-tube"
+      },
+      "bootcount": {
+        "default": "mdi:restart"
+      },
+      "dl_restricted_reason": {
+        "default": "mdi:speedometer-slow"
+      },
+      "ul_restricted_reason": {
+        "default": "mdi:speedometer-slow"
+      },
+      "clients": {
+        "default": "mdi:devices"
+      },
+      "public_ip": {
+        "default": "mdi:ip-network"
+      },
+      "radio_2ghz_temp": {
+        "default": "mdi:thermometer"
+      },
+      "radio_5ghz_temp": {
+        "default": "mdi:thermometer"
+      }
+    },
+    "binary_sensor": {
+      "bandwidth_restricted": {
+        "default": "mdi:speedometer-slow"
+      },
+      "snr_above_noise_floor": {
+        "default": "mdi:signal-variant"
+      },
+      "gps_valid": {
+        "default": "mdi:crosshairs-gps"
+      },
+      "has_alerts": {
+        "default": "mdi:alert"
+      },
+      "setup_complete": {
+        "default": "mdi:check-decagram"
+      },
+      "outdoor_mode": {
+        "default": "mdi:home-export-outline"
+      }
+    },
+    "camera": {
+      "obstruction_map": {
+        "default": "mdi:map"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "starlink_local",
+  "name": "Starlink Local",
+  "version": "0.1.0",
+  "config_flow": true,
+  "documentation": "https://github.com/hudsonbrendon/ha-starlink-local",
+  "issue_tracker": "https://github.com/hudsonbrendon/ha-starlink-local/issues",
+  "codeowners": ["@hudsonbrendon"],
+  "iot_class": "local_polling",
+  "integration_type": "hub",
+  "requirements": ["grpcio==1.83.1", "protobuf==7.36.0", "yagrc==1.1.3"]
+}

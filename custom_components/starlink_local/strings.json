@@ -1,0 +1,151 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Starlink Local",
+        "description": "Local gRPC endpoints. Leave a field empty to skip that device.",
+        "data": {
+          "dish_host": "Dish (host:port)",
+          "router_host": "Router (host:port)"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Starlink Local",
+        "data": {
+          "dish_host": "Dish (host:port)",
+          "router_host": "Router (host:port)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "No endpoint responded.",
+      "need_one_host": "Provide at least one endpoint."
+    },
+    "abort": {
+      "already_configured": "These endpoints are already configured.",
+      "reconfigure_successful": "Reconfiguration successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Update interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "azimuth": {
+        "name": "Antenna azimuth"
+      },
+      "elevation": {
+        "name": "Antenna elevation"
+      },
+      "desired_azimuth": {
+        "name": "Desired azimuth"
+      },
+      "desired_elevation": {
+        "name": "Desired elevation"
+      },
+      "tilt_angle": {
+        "name": "Tilt angle"
+      },
+      "attitude_uncertainty": {
+        "name": "Attitude uncertainty"
+      },
+      "obstruction": {
+        "name": "Fraction obstructed"
+      },
+      "signal_quality": {
+        "name": "Signal quality"
+      },
+      "gps_sats": {
+        "name": "GPS satellites"
+      },
+      "downlink": {
+        "name": "Downlink throughput"
+      },
+      "uplink": {
+        "name": "Uplink throughput"
+      },
+      "pop_ping": {
+        "name": "PoP ping latency"
+      },
+      "wan_ping": {
+        "name": "WAN ping latency"
+      },
+      "dish_ping": {
+        "name": "Dish ping latency"
+      },
+      "uptime": {
+        "name": "Uptime"
+      },
+      "mobility_class": {
+        "name": "Mobility class"
+      },
+      "class_of_service": {
+        "name": "Class of service"
+      },
+      "disablement_code": {
+        "name": "Disablement code"
+      },
+      "dish_disablement_code": {
+        "name": "Dish disablement code"
+      },
+      "software_update_state": {
+        "name": "Software update state"
+      },
+      "hardware_self_test": {
+        "name": "Hardware self test"
+      },
+      "bootcount": {
+        "name": "Boot count"
+      },
+      "dl_restricted_reason": {
+        "name": "Downlink restriction reason"
+      },
+      "ul_restricted_reason": {
+        "name": "Uplink restriction reason"
+      },
+      "clients": {
+        "name": "WiFi clients"
+      },
+      "public_ip": {
+        "name": "Public IPv4"
+      },
+      "radio_2ghz_temp": {
+        "name": "2.4 GHz radio temperature"
+      },
+      "radio_5ghz_temp": {
+        "name": "5 GHz radio temperature"
+      }
+    },
+    "binary_sensor": {
+      "bandwidth_restricted": {
+        "name": "Bandwidth restricted"
+      },
+      "snr_above_noise_floor": {
+        "name": "SNR above noise floor"
+      },
+      "gps_valid": {
+        "name": "GPS valid"
+      },
+      "has_alerts": {
+        "name": "Has alerts"
+      },
+      "setup_complete": {
+        "name": "Setup complete"
+      },
+      "outdoor_mode": {
+        "name": "Outdoor mode"
+      }
+    },
+    "camera": {
+      "obstruction_map": {
+        "name": "Obstruction map"
+      }
+    }
+  }
+}

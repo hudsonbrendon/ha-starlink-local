@@ -1,0 +1,151 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Starlink Local",
+        "description": "Endpoints gRPC locais. Deixe um campo vazio para ignorar aquele dispositivo.",
+        "data": {
+          "dish_host": "Antena (host:porta)",
+          "router_host": "Roteador (host:porta)"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigurar Starlink Local",
+        "data": {
+          "dish_host": "Antena (host:porta)",
+          "router_host": "Roteador (host:porta)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nenhum endpoint respondeu.",
+      "need_one_host": "Informe ao menos um endpoint."
+    },
+    "abort": {
+      "already_configured": "Esses endpoints já estão configurados.",
+      "reconfigure_successful": "Reconfiguração realizada com sucesso."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Intervalo de atualização (segundos)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "azimuth": {
+        "name": "Azimute da antena"
+      },
+      "elevation": {
+        "name": "Elevação da antena"
+      },
+      "desired_azimuth": {
+        "name": "Azimute desejado"
+      },
+      "desired_elevation": {
+        "name": "Elevação desejada"
+      },
+      "tilt_angle": {
+        "name": "Ângulo de inclinação"
+      },
+      "attitude_uncertainty": {
+        "name": "Incerteza de atitude"
+      },
+      "obstruction": {
+        "name": "Fração obstruída"
+      },
+      "signal_quality": {
+        "name": "Qualidade do sinal"
+      },
+      "gps_sats": {
+        "name": "Satélites GPS"
+      },
+      "downlink": {
+        "name": "Taxa de download"
+      },
+      "uplink": {
+        "name": "Taxa de upload"
+      },
+      "pop_ping": {
+        "name": "Latência de ping PoP"
+      },
+      "wan_ping": {
+        "name": "Latência de ping WAN"
+      },
+      "dish_ping": {
+        "name": "Latência de ping da antena"
+      },
+      "uptime": {
+        "name": "Tempo ligado"
+      },
+      "mobility_class": {
+        "name": "Classe de mobilidade"
+      },
+      "class_of_service": {
+        "name": "Classe de serviço"
+      },
+      "disablement_code": {
+        "name": "Código de desativação"
+      },
+      "dish_disablement_code": {
+        "name": "Código de desativação da antena"
+      },
+      "software_update_state": {
+        "name": "Estado da atualização"
+      },
+      "hardware_self_test": {
+        "name": "Autoteste de hardware"
+      },
+      "bootcount": {
+        "name": "Contagem de boots"
+      },
+      "dl_restricted_reason": {
+        "name": "Motivo da restrição de download"
+      },
+      "ul_restricted_reason": {
+        "name": "Motivo da restrição de upload"
+      },
+      "clients": {
+        "name": "Clientes Wi-Fi"
+      },
+      "public_ip": {
+        "name": "IPv4 público"
+      },
+      "radio_2ghz_temp": {
+        "name": "Temperatura do rádio 2,4 GHz"
+      },
+      "radio_5ghz_temp": {
+        "name": "Temperatura do rádio 5 GHz"
+      }
+    },
+    "binary_sensor": {
+      "bandwidth_restricted": {
+        "name": "Banda restringida"
+      },
+      "snr_above_noise_floor": {
+        "name": "SNR acima do ruído"
+      },
+      "gps_valid": {
+        "name": "GPS válido"
+      },
+      "has_alerts": {
+        "name": "Possui alertas"
+      },
+      "setup_complete": {
+        "name": "Configuração concluída"
+      },
+      "outdoor_mode": {
+        "name": "Modo externo"
+      }
+    },
+    "camera": {
+      "obstruction_map": {
+        "name": "Mapa de obstrução"
+      }
+    }
+  }
+}
