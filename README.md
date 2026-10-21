@@ -76,7 +76,7 @@ update interval (5–3600 s, default 30), or **Reconfigure** to change the endpo
 ## Credits
 
 Built by [@hudsonbrendon](https://github.com/hudsonbrendon). Pairs well with the
-[Starlink animated Lovelace card](https://github.com/hudsonbrendon/starlink-card).
+[Starlink Local Card](https://github.com/hudsonbrendon/ha-starlink-local-card).
 
 ## License
 
