@@ -37,7 +37,7 @@ class DishCoordinator(DataUpdateCoordinator[dict]):
     async def _async_update_data(self) -> dict:
         try:
             return await self.hass.async_add_executor_job(self._fetch)
-        except Exception as err:  # noqa: BLE001 - surface any gRPC failure to HA
+        except Exception as err:
             raise UpdateFailed(f"dish poll failed: {err}") from err
 
 
@@ -60,12 +60,12 @@ class RouterCoordinator(DataUpdateCoordinator[dict]):
             for entry in radio.get("radioStats", []):
                 # band is RF_2GHZ / RF_5GHZ / RF_5GHZ_HIGH
                 status[f"_radio_{entry.get('band')}"] = entry
-        except Exception:  # noqa: BLE001 - radio stats is optional enrichment
+        except Exception:  # noqa: BLE001, S110
             pass
         return status
 
     async def _async_update_data(self) -> dict:
         try:
             return await self.hass.async_add_executor_job(self._fetch)
-        except Exception as err:  # noqa: BLE001
+        except Exception as err:
             raise UpdateFailed(f"router poll failed: {err}") from err

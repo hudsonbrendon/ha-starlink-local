@@ -1,15 +1,17 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hudsonbrendon/ha-starlink-local/main/custom_components/starlink_local/brand/logo%402x.png" alt="Starlink Local" width="300">
+  <img src="custom_components/starlink_local/brand/logo@2x.png" alt="Starlink Local" height="128">
 </p>
 
-<h1 align="center">Starlink Local for Home Assistant</h1>
+# Starlink Local for Home Assistant
 
-<p align="center">
-  <a href="https://github.com/hacs/integration"><img src="https://img.shields.io/badge/HACS-Custom-41BDF5.svg" alt="HACS Custom"></a>
-  <a href="https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/validate.yml"><img src="https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/validate.yml/badge.svg" alt="Validate"></a>
-  <a href="https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/hassfest.yml"><img src="https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/hassfest.yml/badge.svg" alt="hassfest"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-</p>
+[![Tests](https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/tests.yml/badge.svg)](https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/tests.yml)
+[![Hassfest](https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/hassfest.yml/badge.svg)](https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/hassfest.yml)
+[![HACS](https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/validate.yml/badge.svg)](https://github.com/hudsonbrendon/ha-starlink-local/actions/workflows/validate.yml)
+[![Release](https://img.shields.io/github/v/release/hudsonbrendon/ha-starlink-local?sort=semver)](https://github.com/hudsonbrendon/ha-starlink-local/releases)
+[![Downloads](https://img.shields.io/github/downloads/hudsonbrendon/ha-starlink-local/total)](https://github.com/hudsonbrendon/ha-starlink-local/releases)
+[![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz/)
+[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2024.10.0%2B-18BCF2?logo=homeassistant&logoColor=white)](https://www.home-assistant.io/)
+[![License](https://img.shields.io/github/license/hudsonbrendon/ha-starlink-local)](LICENSE)
 
 Richer **local** telemetry for your Starlink **dish and WiFi router**, straight from
 their on-device gRPC API — no Starlink account, no cloud. It surfaces everything the
@@ -50,6 +52,9 @@ against firmware updates. Home Assistant must have a network route to those addr
 typically a Wi-Fi/LAN link into the Starlink router's subnet.
 
 ## Installation
+
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=hudsonbrendon&repository=ha-starlink-local&category=integration)
+[![Add integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=starlink_local)
 
 ### HACS (recommended)
 

@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import voluptuous as vol
-
 from homeassistant.config_entries import (
     ConfigEntry,
     ConfigFlow,
@@ -112,6 +111,6 @@ def _probe(dish: str | None, router: str | None) -> bool:
         try:
             StarlinkDevice(host).call("get_device_info", timeout=8)
             return True
-        except Exception:  # noqa: BLE001 - any failure means unreachable
+        except Exception:  # noqa: BLE001, S112
             continue
     return False

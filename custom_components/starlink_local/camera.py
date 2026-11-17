@@ -41,7 +41,7 @@ class ObstructionMapCamera(Camera):
             data = self._device.call("dish_get_obstruction_map")
             self._cache = _render(data)
             self._cache_at = now
-        except Exception:  # noqa: BLE001 - keep last good frame on failure
+        except Exception:  # noqa: BLE001, S110
             pass
         return self._cache
 
